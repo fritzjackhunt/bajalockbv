@@ -1,3 +1,383 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    font-size: 1.125rem;
+    letter-spacing: .02em;
+    font-family: 'Montserrat' sans-serif;
+    line-height: 1.5;
+}
+
+#jumbo {
+    background-color: #23344F;
+}
+
+#jumbo h3 {
+    font-size: 60px;
+    letter-spacing: .02em;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+#jumbo h5 {
+    font-size: 48px;
+    letter-spacing: 1px;
+    color: #fff;
+    line-height: 32px;
+    font-weight: 500;
+    text-transform: capitalize;
+}   
+
+li.nav-item {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+li.nav-item:last-child {
+    margin-right: 20px;
+}
+
+a.navbar-brand,
+a.nav-link,
+a.nav-link.active {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Montserrat' sans-seriff;
+    letter-spacing: .02em;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+}
+
+a.nav-link:hover {
+    color: #fff;
+}
+
+a.nav-link::after {
+    content: ""; /* Create a pseudo-element */
+    position: absolute;
+    left: 0; /* Start from the center */
+    bottom: -2px; /* Position at the bottom of the text */
+    width: 100%; /* Full width for the underline */
+    height: 2px; /* Thickness of the underline */
+    background: linear-gradient(90deg, rgb(204, 239, 58), rgb(36, 171, 226)); /* Blue to cyan gradient */
+    transform: scaleX(0); /* Initial scale is 0 */
+    transform-origin: center; /* Origin for scaling is center */
+    transition: transform 0.4s ease-in-out; /* Animation for scaling */
+} 
+
+a.nav-link:hover::after {
+    transform: scaleX(1); /* Expand to full width on hover */
+}
+
+#delivers {
+    background-color: #23344F;
+    color: #fff;
+}
+
+#delivers ul li::marker {
+    color: #40BE8A;
+}
+
+#delivers h3 {
+    color: #40BE8A;
+}
+
+#delivers h2 {
+    color: 
+    #24abe2 !important;
+    font-size: 2.25rem;
+    line-height: 1.1667;
+    letter-spacing: .02em;
+    font-weight: 300;
+}
+
+#delivers p {
+    font-weight: 400;
+}
+
+#operations {
+    background-color: #1D4A7F;
+    height: 600px;
+}
+
+#company-operations {
+    height: 600px;
+}
+
+.flex-md {
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: wrap;
+}
+
+.md-content {
+    z-index: 10;
+    margin-left: -8.333333% !important; 
+    padding-left: 6.875rem !important;
+    padding-right: 6.875rem !important;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.md-content2 {
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: -2.5rem;
+    margin-top: -2.5rem !important;
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+    position: relative;
+    width: 100%;
+}
+
+
+#image-container {
+    position: relative; /* Positioning context for absolute children */
+}
+
+.image-left {
+    position: absolute; /* Allow overlapping */
+    left: 0; /* Align to the left */
+    top: 0; /* Align to the top */
+    z-index: 1; /* Lower z-index for the left image */
+}
+
+.image-right {
+    position: absolute; /* Allow overlapping */
+    left: 500px; /* Adjust this value to control overlap */
+    top: 25px; /* Adjust vertical position as needed */
+    z-index: 2; /* Higher z-index for the right image */
+    height: 450px;
+    background-color: #23344F;
+    color: #fff;
+    width: 50%;
+}
+
+.company-image-right {
+    position: absolute; /* Allow overlapping */
+    left: 500px; /* Adjust this value to control overlap */
+    top: 25px; /* Adjust vertical position as needed */
+    z-index: 2; /* Higher z-index for the right image */
+    height: 450px;
+    background-color: #24ABE2;
+    color: black;
+    width: 50%;
+}
+
+.image-left1 {
+    position: absolute; /* Allow overlapping */
+    left: 500px; /* Align to the left */
+    top: 0; /* Align to the top */
+    z-index: 1; /* Lower z-index for the left image */
+}
+
+.image-right1 {
+    position: absolute; /* Allow overlapping */
+    left: 10px; /* Adjust this value to control overlap */
+    top: 25px; /* Adjust vertical position as needed */
+    z-index: 2; /* Higher z-index for the right image */
+    height: 450px;
+    background-color: #23344F;
+    color: #fff;
+    width: 50%;
+}
+
+.company-image-right1 {
+    position: absolute; /* Allow overlapping */
+    left: 10px; /* Adjust this value to control overlap */
+    top: 25px; /* Adjust vertical position as needed */
+    z-index: 2; /* Higher z-index for the right image */
+    height: 450px;
+    background-color: #24ABE2;
+    color: black;
+    width: 50%;
+}
+
+#counts h5 {
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#quicklinks,
+#enhanced {
+    background-image: url('/static/pictures/footer-top.svg');
+}
+
+#quicklinks h4,
+#enhanced h4{
+    color: #fff;
+}
+
+.card-custom {
+    background-color: #1D4A7F;
+    color: #fff;
+    transition: color 0.7s ease, background-color 0.7s ease;
+}
+
+.card-custom:hover {
+    color: #1D4A7F !important;
+    background-color: #fff;
+}
+
+#company-header {
+    position: relative;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
+        url('/static/pictures/comapny.png');
+    background-size: contain;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 625px;
+    width: 100%;
+}
+
+#operations-header {
+    position: relative;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
+        url('/static/pictures/operations-page.png');
+    background-size: contain;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 625px;
+    width: 100%;
+}
+
+#sustainability-header {
+    position: relative;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
+        url('/static/pictures/sustainability-page.png');
+    background-size: contain;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 625px;
+    width: 100%;
+}
+
+#contact-header {
+    position: relative;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
+        url('/static/pictures/contact-page.png');
+    background-size: contain;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 625px;
+    width: 100%;
+}
+
+#overlay-text {
+    position: absolute; /* Positioning relative to the container */
+    top: 50%; /* Center vertically */
+    left: 15%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Add some padding for aesthetics */
+   /* background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+
+}
+
+#overlay-text h5 {
+    font-size: 3rem;
+    line-height: 1.125;
+}
+
+#counts {
+    background-color: #23344F;
+}
+
+#counts span {
+    color: #24abe2;
+    margin-bottom: 1.25rem;
+    font-size: 5.25rem;
+    font-weight: 300;
+    line-height: 1.0714;
+}
+
+#counts p {
+    color: #24abe2;
+    font-size: 1.5rem;
+    line-height: 1.33333;
+    letter-spacing: .015em;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer {
+    background-color: #23344F;
+    color: #fff;
+}
+
+#footer ul li{
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    text-transform: none;
+    color: #fff;
+}
+
+
+#copyright span {
+    font-size: 12px;
+    letter-spacing: 0;
+}
+
+
+
+/** Custom styling for BIG screens START **/
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+
+    .jumboBig-px {
+        padding-left:  3rem !important;
+        padding-right: 3rem !important;
+    }
+}
+
+/** Custom styling for BIG screens END **/

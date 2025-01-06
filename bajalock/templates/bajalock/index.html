@@ -1,23 +1,126 @@
+{% extends 'bajalock/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bajalock Bv</title>
 
-    <!-- Template Main CSS File -->
-    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+{% block content %}
 
-    <!--BOOTSTRAP 5 CSS link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--Jumbotron section STARTS-->
 
-</head>
-<body>
-    hello world
+    <div class="container-fluid" id="jumbo">
+      <div class="row jumboBig-px">
+          <div class="col-lg-4 col-12 d-flex flex-column align-self-center" id="jumboText">
+              <h3>Bajalock Bv</h3>
+              <h5>Oil Petroleum</h5>
+              <div class="mt-5">
+                  <a class="btn btn-outline-warning" href="{% url 'contact' %}" role="button">Contact Us</a>
+              </div>     
+          </div>
+          <div class="col-lg-8 col-12">
+              <img src="{% static 'pictures/jumbo.webp' %}" class="d-block w-100" alt="...">
+          </div>
+      </div>
+    </div>
+
+    <!--Jumbotron section ENDS-->
 
 
-    <!--BOOTSTRAP 5 JS LINK -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
-</html>
+    <!--Delivers section STARTS-->
+    <div class="container-fluid" id="delivers">
+      <div class="row ps-5 pt-5">
+        <div class="col-lg-7 py-5 ps-5">
+          <h2>Bajalock BV Energy delivers abundant energy responsibly, affordably, and reliably, as oil and gas continues to be an essential part of a diversified energy solution for ever-growing global demand.</h2>
+
+          <p class="pt-5">Bajalock BV Energy is a premier Williston Basin operator with high-quality assets, differentiated technical knowledge, and strong track record of value creation. Our disciplined capital allocation across top-tier assets and operational excellence empower us to be resilient and adaptable and maximize returns for our shareholders. Our best-in-class balance sheet represents our commitment to capital discipline and provides flexibility across volatile commodity price environments. We lead with a diverse board of directors and act as responsible stewards of our team, communities, and the planet, safely delivering energy to improve lives. As a proud oil and gas operator, werre committed to energizing the world today and tomorrow.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Delivers section ENDS-->
+
+    <!--Operations section STARTS-->
+
+    <div class="container-fluid" id="operations">
+      <div class="row px-5 py-5">
+        <div class="col-lg-12 px-5" id="image-container">
+          <div class="image-left">
+            <img src="{% static 'pictures/operations.png' %}" id="rotate" class="d-block " style="width: 650px; height: 500px;" alt="...">
+          </div>
+
+          <div class="image-right py-5 px-5">
+            <div class="px-5">
+              <h2 class="py-5">Operations</h2>
+              <p>We are a premier and responsible operator of high-quality assets in the Williston Basin, poised for significant and resilient cash flow generation.</p>
+              <button type="button" class="btn btn-outline-warning">Learn More</button>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="operations">
+      <div class="row px-5 py-5">
+        <div class="col-lg-12 px-5" id="image-container">
+          <div class="image-left1">
+            <img src="{% static 'pictures/sustainability.png' %}" id="rotate" class="d-block " style="width: 650px; height: 500px;" alt="...">
+          </div>
+
+          <div class="image-right1 py-5 px-5">
+            <div class="px-5">
+              <h2 class="py-5">Sustainability</h2>
+              <p>We are a premier and responsible operator of high-quality assets in the Williston Basin, poised for significant and resilient cash flow generation.</p>
+              <button type="button" class="btn btn-outline-warning">Learn More</button>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="operations">
+      <div class="row px-5 py-5">
+        <div class="col-lg-12 px-5" id="image-container">
+          <div class="image-left">
+            <img src="{% static 'pictures/careers.png' %}" id="rotate" class="d-block " style="width: 650px; height: 500px;" alt="...">
+          </div>
+
+          <div class="image-right py-5 px-5">
+            <div class="px-5">
+              <h2 class="py-5">Careers</h2>
+              <p>We are a premier and responsible operator of high-quality assets in the Williston Basin, poised for significant and resilient cash flow generation.</p>
+              <button type="button" class="btn btn-outline-warning">Learn More</button>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Operations section ENDS-->
+
+    <!--Quick Links section STARTS-->
+    <div class="container-fluid" id="quicklinks">
+      <div class="row py-5 px-5">
+        <div class="col-lg-12 text-center">
+          <h4>Quick Links</h4>
+          <br>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card-custom h-100 py-4 px-5">
+            <div class="card-body">
+              <h5>Meet Our Management</h5>
+              <p>Our management team's industry experise, experience, and commitment to ESG best practices make us an industry leader for today and tomorrow</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card-custom h-100 py-4 px-5">
+            <div class="card-body">
+              <h5>Owners</h5>
+              <p>We take pride in building lasting relationships with our royalty owners. Our goal is to provide all owners with a level of service that is beyond expectation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Quick Links section ENDS-->
+
+{% endblock %}
