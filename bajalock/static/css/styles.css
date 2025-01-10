@@ -1,4 +1,5 @@
 * {
+    border: 1px red;
     box-sizing: border-box;
 }
 
@@ -74,6 +75,11 @@ a.nav-link:hover::after {
 }
 
 #delivers {
+    background-color: #23344F;
+    color: #fff;
+}
+
+#ourcompany {
     background-color: #23344F;
     color: #fff;
 }
@@ -269,6 +275,18 @@ a.nav-link:hover::after {
     width: 100%;
 }
 
+#products-header {
+    position: relative;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
+        url('/static/pictures/products.png');
+    background-size: contain;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 625px;
+    width: 100%;
+}
+
 #contact-header {
     position: relative;
     background-image: 
@@ -316,6 +334,64 @@ a.nav-link:hover::after {
     line-height: 1.33333;
     letter-spacing: .015em;
     font-weight: 300;
+}
+
+#petroleum-page,
+#petroleum-pic {
+    background-color: #E8ECF2;
+}
+
+#petroleum-page h3 {
+    font-size: 2.25rem;
+    line-height: 1.1667;
+    letter-spacing: .02em;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+#petroleum-page h3,
+#petroleum-page p {
+    color: #23344f;
+}
+
+.petroleum-line {
+    display: block;
+    width: 80px;
+    height: 2px;
+    border-top: 2px #23344f solid;
+    border-color: #23344f !important;
+}
+
+#petroleum-pic {
+    height: 400px;
+}
+
+.petroleum-image {
+    position: absolute; /* Allow overlapping */
+    left: 0px; /* Adjust this value to control overlap */
+    top: 180px; /* Adjust vertical position as needed */
+    z-index: 2; /* Higher z-index for the right image */
+    height: 140px;
+    background-color: #24ABE2;
+    color: #23344F;
+    width: 528.5px;
+}
+
+.petroleum-image-cus {
+    position: absolute; /* Allow overlapping */
+    left: 0px; /* Adjust this value to control overlap */
+    top: 150px; /* Adjust vertical position as needed */
+    z-index: 2; /* Higher z-index for the right image */
+    height: 210px;
+    background-color: #24ABE2;
+    color: #23344F;
+    width: 528.5px;
+}
+
+.petroleum-image p {
+    font-size: 1.125rem;
+    line-height: 1.33333;
+    letter-spacing: .02em;
 }
 
 

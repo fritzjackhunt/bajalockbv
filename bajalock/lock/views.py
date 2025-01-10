@@ -14,6 +14,9 @@ def operations(request):
 def sustainability(request):
     return render(request, 'bajalock/sustainability.html')
 
+def products(request):
+    return render(request, 'bajalock/products.html')
+
 def contact(request):
     if request.method == "POST":
         contact_fname = request.POST['fname']
