@@ -1,3 +1,66 @@
+// Function to animate numbers
+$.fn.animateNumbers = function(targetValue, isInteger, duration) {
+  var $this = $(this);
+  var startValue = parseInt($this.text(), 10);
+  var startTime = performance.now();
+
+  function animate(time) {
+      var elapsed = time - startTime;
+      var progress = Math.min(elapsed / duration, 1);
+      
+      var newValue = Math.floor(startValue + (targetValue - startValue) * progress);
+      
+      if (isInteger) {
+          $this.text(newValue + "%");
+      } else {
+          $this.text((newValue).toFixed(2));
+      }
+
+      if (progress < 1) {
+          requestAnimationFrame(animate);
+      } else {
+          $this.text(targetValue + "%"); // Ensure it ends at target value
+      }
+  }
+
+  requestAnimationFrame(animate);
+};
+
+// Progress bar loading function
+function loadSkillBars() {
+  $('.single-skill-bar').each(function() {
+      var $this = $(this);
+      var $skillTrack = $this.find('.skill-track');
+      var $percentageLabel = $this.find('.number-percentage');
+      
+      var targetValue = $percentageLabel.data('value');
+      
+      // Animate numbers and progress bar
+      $percentageLabel.animateNumbers(targetValue, true, $percentageLabel.data('animation-duration'));
+      
+      // Animate progress bar width
+      $skillTrack.animate({
+          width: targetValue + "%"
+      }, $percentageLabel.data('animation-duration'));
+  });
+}
+
+// Check if the target section is in view
+function checkScroll() {
+  const rect = document.getElementById("targetSection").getBoundingClientRect();
+  
+  if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+      loadSkillBars(); // Load skill bars when in view
+      window.removeEventListener("scroll", checkScroll); // Remove listener after loading
+  }
+}
+
+// Add scroll event listener
+window.addEventListener("scroll", checkScroll);
+
+
+
+
 (function() {
     "use strict";
   
