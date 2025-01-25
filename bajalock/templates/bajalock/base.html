@@ -31,17 +31,22 @@
 <body>
 
   <style>
+
     .navbar {
-        background-color: transparent; /* Translucent effect */
-        position: absolute; /* Set position */
-        z-index: 30; /* Ensures navbar is above other elements */
-        width: 100%;
+      background-color: transparent; /* Translucent effect */
+      position: absolute; /* Set position */
+      z-index: 20; /* Ensures navbar is above other elements */
+      width: 100%;
     }
 
     .navbar .nav-link {
-      color: white !important; /* Change navbar text color to white for visibility */
-    }
+        color: #fff !important; /* Change navbar text color to white for visibility */
+      }
+
   </style>
+
+
+
     <!--Navbar section STARTS-->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
@@ -84,28 +89,29 @@
    
     <div class="container-fluid" id="footer">
       
-        <div class="row px-5 py-5">
+        <div class="row psx-5 psy-5">
           <hr>
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-12">
 
             <img src="{% static 'pictures/logo2.png' %}" alt="Haan Oil Storage" width="160" height="50">
 
-            <br>
+            <br> <br>
   
             <span>1001 Fannin Street | Suite 1500</span>
+            <br>
             <span>Houston, Texas 77002</span>
   
             <p>T: 281 404 9500</p>
-  
-            <p>info@bajalockbv.com</p>
   
             <br>
   
             <p>To report an emergency or ethical concern please call our hotline numbers:</p>
           </div>
   
-          <div class="col-lg-3">
-            <ul>
+          <div class="col-lg-3 col-12">
+            <span class="footer-sub">Quick Links</span>
+            <span class="footer-line"></span>
+            <ul class="pct-5 pst-3">
               <li><a href="{% url 'company' %}">Our Company</a></li>
               <li><a href="{% url 'operations' %}">Operations</a></li>
               <li><a href="{% url 'sustainability' %}">Sustainability</a></li>
@@ -114,13 +120,15 @@
             </ul>
           </div>
   
-          <div class="col-lg-3">
-            <ul>
-              <li>Owners</li>
-              <li>Careers</li>
-              <li>Contact</li>
+          <div class="col-lg-3 col-12">
+            <span class="footer-sub">Contacts</span>
+            <span class="footer-line"></span>
+            <ul class="pct-5 pst-3">
+              <li>info@bajolockbv.com</li>
+              <li>Weekdays 8AM - 10PM</li>
+              <li>Weekends 10AM - 6PM</li>
             </ul>
-          </div>       
+          </div>
   
           <div class="col-lg-12" id="copyright">
            
@@ -134,6 +142,8 @@
   
 
       <!--Vendor JS files-->
+
+      
       <script src="{% static 'js/aos.js' %}"></script>
       <script src="{% static 'js/purecounter.js' %}" type="application/javascript"></script>
       <script src="{% static 'js/glightbox.min.js' %}" type="application/javascript"></script>

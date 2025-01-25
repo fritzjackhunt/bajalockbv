@@ -1,5 +1,4 @@
 * {
-    border: 1px red;
     box-sizing: border-box;
 }
 
@@ -123,14 +122,6 @@ a.nav-link:hover::after {
     color: #40BE8A;
 }
 
-#delivers h2 {
-    color: 
-    #24abe2 !important;
-    font-size: 2.25rem;
-    line-height: 1.1667;
-    letter-spacing: .02em;
-    font-weight: 300;
-}
 
 #delivers p {
     font-weight: 400;
@@ -260,77 +251,6 @@ a.nav-link:hover::after {
     background-color: #fff;
 }
 
-#company-header {
-    position: relative;
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
-        url('/static/pictures/comapny.png');
-    background-size: contain;
-    background-position: center;
-    background-blend-mode: multiply;
-    height: 625px;
-    width: 100%;
-}
-
-#operations-header {
-    position: relative;
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
-        url('/static/pictures/operations-page.png');
-    background-size: contain;
-    background-position: center;
-    background-blend-mode: multiply;
-    height: 625px;
-    width: 100%;
-}
-
-#sustainability-header {
-    position: relative;
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
-        url('/static/pictures/sustainability-page.png');
-    background-size: contain;
-    background-position: center;
-    background-blend-mode: multiply;
-    height: 625px;
-    width: 100%;
-}
-
-#products-header {
-    position: relative;
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
-        url('/static/pictures/products.png');
-    background-size: contain;
-    background-position: center;
-    background-blend-mode: multiply;
-    height: 625px;
-    width: 100%;
-}
-
-#contact-header {
-    position: relative;
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
-        url('/static/pictures/contact-page.png');
-    background-size: contain;
-    background-position: center;
-    background-blend-mode: multiply;
-    height: 625px;
-    width: 100%;
-}
-
-#overlay-text {
-    position: absolute; /* Positioning relative to the container */
-    top: 50%; /* Center vertically */
-    left: 15%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for centering */
-    color: white; /* Text color */
-    text-align: center; /* Center align text */
-    padding: 20px; /* Add some padding for aesthetics */
-   /* background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
-}
-
 #image-container {
     position: relative; /* Positioning context for absolute children */
 }
@@ -401,7 +321,9 @@ a.nav-link:hover::after {
     z-index: 1; /* Lower z-index for the left image */
 }
 
-#overlay-text h5 {
+#overlay-text h5,
+#overlay-text-company h5,
+#overlay-text-sustain h5 {
     font-size: 3rem;
     line-height: 1.125;
 }
@@ -450,6 +372,14 @@ a.nav-link:hover::after {
     height: 2px;
     border-top: 2px #23344f solid;
     border-color: #23344f !important;
+}
+
+.footer-line {
+    display: block;
+    width: 20%;
+    height: 2px;
+    border-top: 2px #fff solid;
+    border-color: #fff !important;
 }
 
 .petroleum-image {
@@ -526,6 +456,15 @@ a.nav-link:hover::after {
     color: #fff;
 }
 
+.footer-sub {
+    font-size: large;
+    font-weight: 700;
+}
+
+#footer ul {
+    padding-left: 0;
+}
+
 #footer ul li{
     text-decoration: none;
     list-style-type: none;
@@ -568,6 +507,108 @@ a.nav-link:hover::after {
         width: 100%;
     }
 
+    #delivers h2 {
+        color: 
+        #24abe2 !important;
+        font-size: 2.25rem;
+        line-height: 1.1667;
+        letter-spacing: .02em;
+        font-weight: 300;
+    }
+
+    #overlay-text {
+        position: absolute; /* Positioning relative to the container */
+        top: 50%; /* Center vertically */
+        left: 15%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for centering */
+        color: white; /* Text color */
+        text-align: center; /* Center align text */
+        padding: 20px; /* Add some padding for aesthetics */
+       /* background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    }
+
+    #overlay-text-sustain {
+        position: absolute; /* Positioning relative to the container */
+        top: 50%; /* Center vertically */
+        left: 15%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for centering */
+        color: white; /* Text color */
+        text-align: center; /* Center align text */
+        padding: 20px; /* Add some padding for aesthetics */
+       /* background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    }
+
+    #overlay-text-company {
+        position: absolute; /* Positioning relative to the container */
+        top: 50%; /* Center vertically */
+        left: 15%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for centering */
+        color: white; /* Text color */
+        text-align: center; /* Center align text */
+        padding: 20px; /* Add some padding for aesthetics */
+       /* background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    }
+
+    #company-header {
+        position: relative;
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
+            url('/static/pictures/comapny.png');
+        background-size: contain;
+        background-position: center;
+        background-blend-mode: multiply;
+        height: 625px;
+        width: 100%;
+    }
+
+    #products-header {
+        position: relative;
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
+            url('/static/pictures/products.png');
+        background-size: contain;
+        background-position: center;
+        background-blend-mode: multiply;
+        height: 625px;
+        width: 100%;
+    }
+
+    #operations-header {
+        position: relative;
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
+            url('/static/pictures/operations-page.png');
+        background-size: contain;
+        background-position: center;
+        background-blend-mode: multiply;
+        height: 625px;
+        width: 100%;
+    }
+
+    #sustainability-header {
+        position: relative;
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
+            url('/static/pictures/sustainability-page.png');
+        background-size: contain;
+        background-position: center;
+        background-blend-mode: multiply;
+        height: 625px;
+        width: 100%;
+    }
+
+    #contact-header {
+        position: relative;
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
+            url('/static/pictures/contact-page.png');
+        background-size: contain;
+        background-position: center;
+        background-blend-mode: multiply;
+        height: 625px;
+        width: 100%;
+    }
+
     .psy-4 {
         padding-top: 1.5rem !important;
         padding-bottom: 1.5rem !important;
@@ -595,9 +636,33 @@ a.nav-link:hover::after {
     .pct-5 {
         padding-top: 3rem !important;
     }
+
+
 }
 
 /** Custom styling for BIG screens END **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -625,6 +690,107 @@ a.nav-link:hover::after {
         width: 100%;
     }
 
+    #delivers h2 {
+        color: 
+        #24abe2 !important;
+        line-height: 1.1667;
+        letter-spacing: .02em;
+        font-weight: 300;
+    }
+
+    #overlay-text {
+        position: absolute; /* Positioning relative to the container */
+        top: 50%; /* Center vertically */
+        left: 35%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for centering */
+        color: white; /* Text color */
+        text-align: center; /* Center align text */
+        padding: 20px; /* Add some padding for aesthetics */
+       /* background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    }
+
+    #overlay-text-sustain {
+        position: absolute; /* Positioning relative to the container */
+        top: 50%; /* Center vertically */
+        left: 45%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for centering */
+        color: white; /* Text color */
+        text-align: center; /* Center align text */
+        padding: 20px; /* Add some padding for aesthetics */
+       /* background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    }
+
+    #overlay-text-company {
+        position: absolute; /* Positioning relative to the container */
+        top: 50%; /* Center vertically */
+        left: 48%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for centering */
+        color: white; /* Text color */
+        text-align: left; /* Center align text */
+        padding: 20px; /* Add some padding for aesthetics */
+       /* background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    }
+
+    #company-header {
+        position: relative;
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
+            url('/static/pictures/company-mobile.webp');
+        background-size: contain;
+        background-position: center;
+        background-blend-mode: multiply;
+        height: 600px;
+        width: 100%;
+    }
+
+    #products-header {
+        position: relative;
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
+            url('/static/pictures/products-mobile.webp');
+        background-size: contain;
+        background-position: center;
+        background-blend-mode: multiply;
+        height: 600px;
+        width: 100%;
+    }
+
+    #operations-header {
+        position: relative;
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
+            url('/static/pictures/operations-mobile.webp');
+        background-size: contain;
+        background-position: center;
+        background-blend-mode: multiply;
+        height: 600px;
+        width: 100%;
+    }
+
+    #sustainability-header {
+        position: relative;
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
+            url('/static/pictures/sustainability-mobile.webp');
+        background-size: contain;
+        background-position: center;
+        background-blend-mode: multiply;
+        height: 600px;
+        width: 100%;
+    }
+
+    #contact-header {
+        position: relative;
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Adjust alpha for darkness */
+            url('/static/pictures/contact-page.png');
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
+        height: 600px;
+        width: 100%;
+    }
+
     .pcy-2 {
         padding-top: .5rem !important;
         padding-bottom: .5rem !important;
@@ -633,6 +799,10 @@ a.nav-link:hover::after {
     .pcx-2 {
         padding-left: .5rem !important;
         padding-right: .5rem !important;
+    }
+
+    .pst-3 {
+        padding-top: 1rem !important;
     }
 }
 
