@@ -28,7 +28,7 @@ def contact(request):
             contact_fname, 
             contact_message,
             contact_email,
-            ['essiet.aniekan@yahoo.com'],
+            ['info@bajolockbv.com'],
             fail_silently = False,
         )
 
